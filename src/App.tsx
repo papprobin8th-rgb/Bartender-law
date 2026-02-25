@@ -1172,6 +1172,33 @@ export default function App() {
           <div className="space-y-6">
             <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
               <h4 className="text-lg text-emerald-500 font-bold mb-2">
+                "Ako môžem nahradiť tieto AI obrázky vlastnými fotkami?"
+              </h4>
+              <p className="text-gray-300 mb-4">
+                Ak sa ti nepáčia tieto vygenerované obrázky (alebo ak AI API opäť spadlo), môžeš ich veľmi jednoducho nahradiť vlastnými fotkami z tvojho baru.
+              </p>
+              <ol className="list-decimal list-inside space-y-2 text-gray-400">
+                <li>Priprav si svoje obrázky. Najlepšie vo formáte <strong>.webp</strong> (alebo .png) a v rozlíšení aspoň 1024x1024px.</li>
+                <li>Pomenuj ich presne podľa názvov, ktoré aplikácia očakáva:
+                  <ul className="list-disc list-inside ml-6 mt-2 text-sm text-gray-500">
+                    <li><code className="bg-black px-1 rounded text-emerald-400">cover.webp</code> (Úvodný obrázok)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">bar_scheme.webp</code> (Schéma baru)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">fake_smile.webp</code> (Falošný úsmev)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">alcohol_shelf.webp</code> (Polička s alkoholom)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">shaking_fail.webp</code> (Nepodarené šejkovanie)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">tears.webp</code> (Slzy barmana)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">building_drink.webp</code> (Building technika)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">stirring_drink.webp</code> (Stirring technika)</li>
+                    <li><code className="bg-black px-1 rounded text-emerald-400">muddling_mint.webp</code> (Muddling technika)</li>
+                  </ul>
+                </li>
+                <li className="mt-2">Vlož tieto premenované súbory do zložky <code className="bg-black px-1 rounded text-emerald-400">/public/images/</code> vo tvojom projekte.</li>
+                <li>Aplikácia pri štarte kontroluje, či tieto súbory existujú. Ak ich nájde, použije ich a nebude sa snažiť generovať nové cez AI.</li>
+              </ol>
+            </div>
+
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h4 className="text-lg text-emerald-500 font-bold mb-2">
                 "Ako sa najlepšie naučím mixológiu?"
               </h4>
               <p className="text-gray-300">
